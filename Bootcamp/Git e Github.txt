@@ -1,3 +1,51 @@
-Otima ferramenta para organização dos estudos.
+Ajuda
 
-Atualização 
+Geral
+git help
+
+Comando específico
+git help add
+git help commit
+git help <qualquer_comando_git>
+
+Configuração
+Geral
+As configurações do GIT são armazenadas no arquivo .gitconfig localizado dentro do diretório do usuário do Sistema Operacional (Ex.: Windows: C:\Users\Documents and Settings\Leonardo ou *nix /home/leonardo).
+
+As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.
+
+Setar usuário
+git config --global user.name "Leonardo Comelli"
+Setar email
+git config --global user.email leonardo@software-ltda.com.br
+Setar editor
+git config --global core.editor vim
+Setar ferramenta de merge
+git config --global merge.tool vimdiff
+Setar arquivos a serem ignorados
+git config --global core.excludesfile ~/.gitignore
+Listar configurações
+git config --list
+
+
+Repositório Local
+Criar novo repositório
+git init
+Verificar estado dos arquivos/diretórios
+git status
+Adicionar arquivo/diretório (staged area)
+Adicionar um arquivo em específico
+git add meu_arquivo.txt
+Adicionar um diretório em específico
+git add meu_diretorio
+Adicionar todos os arquivos/diretórios
+git add .	
+Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)
+git add -f arquivo_no_gitignore.txt
+Comitar arquivo/diretório
+Comitar um arquivo
+git commit meu_arquivo.txt
+Comitar vários arquivos
+git commit meu_arquivo.txt meu_outro_arquivo.txt
+Comitar informando mensagem
+git commit meuarquivo.txt -m "minha mensagem de commit"
